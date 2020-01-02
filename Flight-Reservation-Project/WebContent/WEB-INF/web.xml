@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<servlet>
+		<servlet-name>test</servlet-name>
+		<servlet-class>newproject.Registration</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description></description>
+		<servlet-name>FlightController</servlet-name>
+		<servlet-class>Controller.FlightController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FlightController</servlet-name>
+		<url-pattern>/FlightController</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>test</servlet-name>
+		<url-pattern>/Registration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test3</servlet-name>
+		<servlet-class>newproject.Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test3</servlet-name>
+		<url-pattern>/login1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test10</servlet-name>
+		<servlet-class>newproject.Booked</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test10</servlet-name>
+		<url-pattern>/book</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test2</servlet-name>
+		<servlet-class>newproject.Login</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test2</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test5</servlet-name>
+		<servlet-class>newproject.contact</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test5</servlet-name>
+		<url-pattern>/contact1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test6</servlet-name>
+		<servlet-class>newproject.Profile</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test6</servlet-name>
+		<url-pattern>/profile</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test7</servlet-name>
+		<servlet-class>newproject.View</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test7</servlet-name>
+		<url-pattern>/book5</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test8</servlet-name>
+		<servlet-class>newproject.Ticket</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test8</servlet-name>
+		<url-pattern>/book6</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>test9</servlet-name>
+		<servlet-class>newproject.Admin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>test9</servlet-name>
+		<url-pattern>/ad</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>home1.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
